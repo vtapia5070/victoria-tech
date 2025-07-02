@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'twinkle-kit';
+import { Button } from 'twinkle-kit/core';
 
 const HeroSection: React.FC = () => {
     const handleLearnMore = () => {
@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
 
     return (
         <section
-            className='hero-section'
+            className='hero-section bg-primary-3'
             role='banner'
             aria-labelledby='hero-heading'
             style={{
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
                 textAlign: 'center',
                 minHeight: '100vh',
                 padding: '2rem',
-                maxWidth: '800px',
+                minWidth: '100%',
                 margin: '0 auto',
             }}
         >
@@ -37,6 +37,7 @@ const HeroSection: React.FC = () => {
                     marginBottom: '1rem',
                     lineHeight: '1.2',
                 }}
+                className='text-accent'
             >
                 Victoria Tapia
             </h1>
@@ -77,10 +78,7 @@ const HeroSection: React.FC = () => {
                 role='group'
                 aria-label='Call to action buttons'
             >
-                <Button
-                    onClick={handleLearnMore}
-                    className='cta-button primary'
-                >
+                <Button onClick={handleLearnMore} className='cta-button'>
                     Learn More About Me
                 </Button>
 

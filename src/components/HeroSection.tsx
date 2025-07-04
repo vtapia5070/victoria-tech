@@ -51,7 +51,8 @@ const HeroSection: React.FC = () => {
                 }}
                 aria-describedby='hero-heading'
             >
-                Full-Stack Developer & Tech Innovator
+                Building thoughtful software and empowering the people behind
+                it.
             </p>
 
             <p
@@ -63,9 +64,9 @@ const HeroSection: React.FC = () => {
                     color: '#555',
                 }}
             >
-                Passionate about creating innovative web solutions and building
-                scalable applications that make a difference. Let's build
-                something amazing together.
+                Driven by curiosity and care, I love turning complex ideas into
+                clear strategy. I'm passionate about helping teams operate with
+                purpose and about building products people trust.
             </p>
 
             <div

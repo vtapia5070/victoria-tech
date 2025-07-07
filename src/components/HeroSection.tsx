@@ -22,12 +22,12 @@ const HeroSection: React.FC = () => {
             role='banner'
             aria-labelledby='hero-heading'
         >
-            <h1 id='hero-heading'>
+            <h1 id='hero-heading' className='text-accent'>
                 <span>I'm, </span>
-                <span className='text-accent'>Victoria</span>
+                <span>Victoria.</span>
             </h1>
 
-            <p aria-describedby='hero-heading'>
+            <p aria-describedby='hero-heading' className=''>
                 Building thoughtful software and empowering the people behind
                 it.
             </p>

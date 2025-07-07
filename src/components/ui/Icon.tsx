@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-    name: 'github' | 'linkedin';
+    name: 'github' | 'linkedin' | 'code';
     fill?: string;
     size?: number;
 }
@@ -29,7 +29,7 @@ const icons = {
 
 const Icon: React.FC<IconProps> = ({
     name,
-    fill = 'currentColor',
+    fill = '#943cdd',
     size = 24,
     ...props
 }) => {

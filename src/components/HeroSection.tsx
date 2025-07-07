@@ -27,15 +27,7 @@ const HeroSection: React.FC = () => {
                 <span className='text-accent'>Victoria</span>
             </h1>
 
-            <p
-                style={{
-                    fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
-                    fontWeight: '500',
-                    marginBottom: '1.5rem',
-                    maxWidth: '600px',
-                }}
-                aria-describedby='hero-heading'
-            >
+            <p aria-describedby='hero-heading'>
                 Building thoughtful software and empowering the people behind
                 it.
             </p>

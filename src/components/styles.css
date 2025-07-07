@@ -18,6 +18,13 @@
     line-height: 1.2;
 }
 
+.hero-section p {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'twinkle-kit/core';
 
+import './styles.css';
+
 const HeroSection: React.FC = () => {
     const handleLearnMore = () => {
         // TODO: Implement learn more functionality
@@ -17,17 +19,6 @@ const HeroSection: React.FC = () => {
             className='hero-section bg-primary-3'
             role='banner'
             aria-labelledby='hero-heading'
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                textAlign: 'center',
-                minHeight: '100vh',
-                padding: '2rem',
-                minWidth: '100%',
-                margin: '0 auto',
-            }}
         >
             <h1
                 id='hero-heading'
@@ -37,9 +28,9 @@ const HeroSection: React.FC = () => {
                     marginBottom: '1rem',
                     lineHeight: '1.2',
                 }}
-                className='text-accent'
             >
-                Victoria Tapia
+                <span>I'm, </span>
+                <span className='text-accent'>Victoria</span>
             </h1>
 
             <p
@@ -47,26 +38,12 @@ const HeroSection: React.FC = () => {
                     fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
                     fontWeight: '500',
                     marginBottom: '1.5rem',
-                    color: '#666',
+                    maxWidth: '600px',
                 }}
                 aria-describedby='hero-heading'
             >
                 Building thoughtful software and empowering the people behind
                 it.
-            </p>
-
-            <p
-                style={{
-                    fontSize: 'clamp(1rem, 2vw, 1.2rem)',
-                    lineHeight: '1.6',
-                    marginBottom: '2.5rem',
-                    maxWidth: '600px',
-                    color: '#555',
-                }}
-            >
-                Driven by curiosity and care, I love turning complex ideas into
-                clear strategy. I'm passionate about helping teams operate with
-                purpose and about building products people trust.
             </p>
 
             <div
@@ -75,6 +52,7 @@ const HeroSection: React.FC = () => {
                     gap: '1rem',
                     flexWrap: 'wrap',
                     justifyContent: 'center',
+                    margin: '2rem 0',
                 }}
                 role='group'
                 aria-label='Call to action buttons'

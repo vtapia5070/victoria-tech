@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-    name: 'github' | 'linkedin' | 'code';
+    name: 'github' | 'linkedin';
     fill?: string;
     size?: number;
 }

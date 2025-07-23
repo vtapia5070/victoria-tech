@@ -17,16 +17,16 @@ const AboutSection = forwardRef<HTMLElement, React.HTMLProps<HTMLElement>>(
             <p aria-describedby='about-section'>
                 I’m a full-stack engineer and tech lead with 8+ years of
                 experience shipping resilient systems across fintech,
-                healthcare, e-commerce, and developer platforms, and 3+ years in
-                technical leadership roles. I work across the stack, with a
-                focus on frontend architecture, clean backend integrations, and
-                product-driven code.
+                healthcare, e-commerce, and developer platforms. I work across
+                the stack, with a focus on frontend architecture, clean backend
+                integrations, and product-driven code.
             </p>
             <p aria-describedby='about-section'>
-                I care deeply about creating calm, high-functioning engineering
-                cultures. Whether I’m prototyping a 0–1 product, contributing to
-                launches, or re-architecting legacy systems, I aim to bring
-                curiosity, clarity, and care to both code and collaboration.
+                With 3+ years in technical leadership roles, I care about
+                creating calm, pragmatic, and sustainable engineering cultures.
+                Whether I’m prototyping a 0–1 product, contributing to launches,
+                or re-architecting legacy systems, I aim to bring curiosity,
+                clarity, and care to both code and collaboration.
             </p>
         </section>
     )

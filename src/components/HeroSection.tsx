@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'twinkle-kit/core';
+import { TitleFlip } from './ui/TitleFlip/TitleFlip';
 import { Icon } from './ui/Icon';
 
 import './styles.css';
@@ -18,9 +19,9 @@ const HeroSection: React.FC<Props> = ({ onNavigate }) => {
             aria-labelledby='hero-heading'
         >
             <h1 id='hero-heading' className='text-accent'>
-                <span>I'm, </span>
-                <span>Victoria.</span>
+                <span>I'm, Victoria.</span>
             </h1>
+            <TitleFlip />
 
             <p aria-describedby='hero-heading' className=''>
                 Building thoughtful software and empowering the people behind

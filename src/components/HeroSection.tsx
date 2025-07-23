@@ -4,17 +4,12 @@ import { Icon } from './ui/Icon';
 
 import './styles.css';
 
-const HeroSection: React.FC = () => {
-    const showButtons = false;
-    const handleLearnMore = () => {
-        // TODO: Implement learn more functionality
-        console.log('Learn More About Me clicked');
-    };
+interface Props {
+    onNavigate: () => void;
+}
 
-    const handleGetInTouch = () => {
-        // TODO: Implement get in touch functionality
-        console.log('Get in Touch clicked');
-    };
+const HeroSection: React.FC<Props> = ({ onNavigate }) => {
+    const showButtons = false;
 
     return (
         <section
@@ -32,30 +27,26 @@ const HeroSection: React.FC = () => {
                 it.
             </p>
 
-            {showButtons && (
-                <div
-                    style={{
-                        display: 'flex',
-                        gap: '1rem',
-                        flexWrap: 'wrap',
-                        justifyContent: 'center',
-                        margin: '2rem 0',
-                    }}
-                    role='group'
-                    aria-label='Call to action buttons'
-                >
-                    <Button onClick={handleLearnMore} className='cta-button'>
-                        Learn More About Me
-                    </Button>
-
-                    <Button
-                        onClick={handleGetInTouch}
-                        className='cta-button secondary'
-                    >
+            <div
+                style={{
+                    display: 'flex',
+                    gap: '1rem',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    margin: '2rem 0',
+                }}
+                role='group'
+                aria-label='Call to action buttons'
+            >
+                <Button onClick={onNavigate} className='cta-button'>
+                    Learn More About Me
+                </Button>
+                {showButtons && (
+                    <Button onClick={() => {}} className='cta-button secondary'>
                         Get in Touch
                     </Button>
-                </div>
-            )}
+                )}
+            </div>
             <div
                 className='social-links'
                 role='group'

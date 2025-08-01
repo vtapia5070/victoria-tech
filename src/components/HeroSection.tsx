@@ -18,10 +18,10 @@ const HeroSection: React.FC<Props> = ({ onNavigate }) => {
             role='banner'
             aria-labelledby='hero-heading'
         >
+            <TitleFlip />
             <h1 id='hero-heading' className='text-accent'>
                 <span>I'm, Victoria.</span>
             </h1>
-            <TitleFlip />
 
             <p aria-describedby='hero-heading' className=''>
                 Building thoughtful software and empowering the people behind

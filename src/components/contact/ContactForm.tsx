@@ -46,7 +46,8 @@ export const ContactForm: FC = () => {
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor='first-name'>First Name:</label>
-            <Input name='firstName' />
+            <Input name='firstName' inputId='first-name' />
+            <label htmlFor='email'>Email:</label>
             <Input inputId='email' name='email' />
             <Button type='submit' isLoading={isLoading}>
                 Submit
